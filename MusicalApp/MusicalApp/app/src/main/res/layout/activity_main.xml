@@ -1,0 +1,121 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/downlod"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicalapp.MainActivity">
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME SCREEN"
+            android:textSize="30sp"/>
+        <ImageView
+            android:id="@+id/appicon"
+            android:layout_width="150sp"
+            android:layout_height="120sp"
+            android:layout_marginLeft="30sp"
+            android:src="@drawable/unnamed" />
+        <TextView
+        android:id="@+id/text1"
+        android:padding="10sp"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:text="This activity shows the Home Screen"
+        android:layout_marginLeft="30sp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+</LinearLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="270sp"
+       android:layout_marginLeft="90sp"
+       android:id="@+id/linearLayout2">
+       <TextView
+           android:id="@+id/nowplayng"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Now Playing"
+           android:textSize="30sp" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="23sp"
+           android:text="Buy Music Online"
+           android:textSize="30sp"
+           android:textStyle="italic" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="27sp"
+           android:text="Search Music"
+           android:textSize="30sp"
+           android:textStyle="italic" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="30sp"
+           android:text="Artists"
+           android:textSize="30sp"
+           android:textStyle="italic" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="30sp"
+           android:text="Library"
+           android:textSize="30sp"
+           android:textStyle="italic" />
+   </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="250sp"
+    android:layout_marginLeft="10sp"
+    android:id="@+id/linearLayout3">
+    <ImageButton
+        android:scaleType="fitXY"
+        android:id="@+id/now_icon"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:src="@drawable/now" />
+    <ImageButton
+        android:id="@+id/buy"
+        android:layout_width="70sp"
+        android:scaleType="fitXY"
+        android:layout_height="70sp"
+        android:layout_below="@+id/now_icon"
+        android:src="@drawable/images" />
+    <ImageButton
+        android:id="@+id/search"
+        android:scaleType="fitXY"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:src="@drawable/download"/>
+    <ImageButton
+        android:id="@+id/artist"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/artist"/>
+    <ImageButton
+        android:id="@+id/librarylink"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/library_1"/>
+</LinearLayout>
+    </RelativeLayout>
+</ScrollView>
